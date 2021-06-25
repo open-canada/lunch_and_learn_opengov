@@ -1,8 +1,8 @@
-install.packages("crul")
+system("sudo apt-get install libcurl4-openssl-dev") #the github VM needs this
 
 install.packages("ckanr") #you need to install the packages everytime since it is a fresh container
 
-library(ckanr)
+library("ckanr")
 
 ckanr_setup(url="https://open.canada.ca/data")
 
