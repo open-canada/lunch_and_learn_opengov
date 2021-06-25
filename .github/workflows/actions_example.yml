@@ -16,7 +16,7 @@ jobs:
         with:
           r-version: '4.0.2'
       - run: |
-          Rscript actions_example.r
+          Rscript actions_example.R
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
