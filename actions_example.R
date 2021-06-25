@@ -1,3 +1,5 @@
+install.packages("crul")
+
 install.packages("ckanr") #you need to install the packages everytime since it is a fresh container
 
 library(ckanr)
