@@ -1,5 +1,5 @@
 library(ckanr)
-library(dplyr)
+# library(dplyr)
 
 
 ######get list of ckan instances ##################
