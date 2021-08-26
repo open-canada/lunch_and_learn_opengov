@@ -6,3 +6,6 @@ The recording of this meetup is available at <https://youtu.be/BlpluYPxvog>
 
 Additional notes and discussion are available from the [gccollab](https://gccollab.ca/file/view/8864413/en2021-07-25-meetup-video-and-codes-working-with-open-government-data-part-1-using-the-api-for-open-data-portal-within-rfr)
 (for community members)
+
+References:
+- <https://betterprogramming.pub/github-actions-the-what-why-and-how-3868d5a86292>
