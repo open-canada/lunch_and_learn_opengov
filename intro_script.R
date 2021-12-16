@@ -7,6 +7,23 @@ library(data.table) # It is suggested to always by default use data.table instea
                     # The code will be faster, easier to read, and you will not need dplyr, which is verrry slow.
 # library(dplyr)
 
+
+##  TL;DR - added after LnL
+
+library(ckanr)
+library(data.table) 
+
+ckanr_setup(url = "https://data.ontario.ca/")
+resource_search(q = "name:Vaccin")$results # COVID, Vital, Hospital
+
+res <-resource_show(id ="274b819c-5d69-4539-a4db-f2950794138c")
+res$url
+destfile <- "Hospitalizations by vaccination status.csv"
+curl::curl_download(res$url, destfile)
+dtHosp_Vac <- fread(destfile)
+
+
+
 ######get list of ckan instances ##################
 
 servers()
